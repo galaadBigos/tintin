@@ -17,9 +17,11 @@ class AlbumDetails extends StatelessWidget {
 
   Widget _buildBody() {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: _buildAlbumDetails(),
+      body: SingleChildScrollView(
+        child: Container(
+          padding: const EdgeInsets.all(20.0),
+          child: _buildAlbumDetails(),
+        ),
       ),
       floatingActionButton: _buildActionButton(),
     );
